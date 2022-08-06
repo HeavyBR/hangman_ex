@@ -3,9 +3,11 @@ defmodule Dictionary.Impl.Random do
 
   @type t :: list(String.t())
 
+  @path File.cwd!()
+
   @spec start() :: t()
   def start do
-    "assets/words.txt"
+    (@path <> "/assets/words.txt")
     |> File.read!()
     |> String.split(@split_token, trim: true)
   end

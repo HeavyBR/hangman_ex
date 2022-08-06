@@ -135,7 +135,7 @@ defmodule ImplGameTest do
         "l",
         :lost,
         0,
-        ["b", "a", "t", "m", "a", "_"],
+        ["b", "a", "t", "m", "a", "n"],
         ["a", "b", "l", "m", "p", "q", "r", "s", "t", "y", "z"]
       ]
     ]
