@@ -1,0 +1,13 @@
+<div class="word-so-far">
+    <div class="game-state">
+        <%= state_name(@tally.game_state) %>
+    </div>
+
+    <div class="letters">
+        <%= for ch <- @tally.letters do %>
+            <div class={"one-letter #{if ch != "_", do: "correct"}"}>
+                <%= ch %>
+            </div>
+        <% end %>
+    </div>
+</div>

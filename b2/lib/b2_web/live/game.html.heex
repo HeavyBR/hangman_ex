@@ -1,0 +1,7 @@
+<div class="game-holder" phx-window-keyup="make_move">
+    <.live_component module={Figure} id="figure" tally={@tally}> 
+        Butão
+    </.live_component>
+    <.live_component module={Alphabet} id="alphabet" tally={@tally} />
+    <.live_component module={WordSoFar} id="wordSoFar" tally={@tally} />
+</div>
